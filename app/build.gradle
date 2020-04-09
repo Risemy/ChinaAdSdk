@@ -1,19 +1,14 @@
 apply plugin: 'com.android.application'
-
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.2"
-
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
     defaultConfig {
-        applicationId "com.youloft.cn"
         minSdkVersion 16
-        targetSdkVersion 29
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-
     buildTypes {
         release {
             minifyEnabled false
@@ -21,10 +16,34 @@ android {
         }
     }
 
-}
+    //渠道分发控制
+    flavorDimensions "default"
+    productFlavors {
+        //小米渠道
+        flavors_mi {
+            applicationId "com.youloft.demo.xiaomi"
+            dimension "default"
+            manifestPlaceholders = ["CHANNEL_ID": "xiaomi"]
+        }
 
+        //tap tap渠道
+        flavors_taptap {
+            applicationId "com.youloft.demo"
+            dimension "default"
+            manifestPlaceholders = ["CHANNEL_ID": "taptap"]
+        }
+
+        //搜狗渠道
+        flavors_sougou {
+            applicationId "com.youloft.demo"
+            dimension "default"
+            manifestPlaceholders = ["CHANNEL_ID": "sougou"]
+        }
+
+    }
+}
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])
 
     implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'

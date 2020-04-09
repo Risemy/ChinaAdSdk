@@ -1,18 +1,279 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
 
-</android.support.constraint.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_show_byte_dance_banner"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="显示Banner1"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_show_tencent_banner"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="显示Banner2"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_hide_banner"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="隐藏Banner"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_load_reward_video"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="加载视频广告"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_show_reward_video"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="视频广告"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_load_interstitial"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="加载插屏广告"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_show_interstitial"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="显示插屏广告"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_test_data"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="测试统计"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_get_params"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="获取后台配置"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="登录"
+                android:textColor="#ffffff" />
+
+
+            <TextView
+                android:id="@+id/tv_sync"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="提交存档1"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_sync_stream"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="提交存档2"
+                android:visibility="gone"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_heartbeat"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="心跳检测"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_user_order"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="用户下单"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_resume_purchase"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="恢复购买"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_consume"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="订单消耗"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_query_order"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="查询单个订单"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_leader_board"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:visibility="gone"
+                android:text="获取排行榜 用户信息"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_upload_socre"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="提交用户分数 返回用户排行榜信息，返回结果无加密"
+                android:textColor="#ffffff" />
+
+
+            <TextView
+                android:id="@+id/tv_get_user_rank"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="获取用户自己的排名"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_channelpay_order"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="渠道下单"
+                android:textColor="#ffffff" />
+            <TextView
+                android:id="@+id/tv_channelpay_version"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="获取当前游戏，渠道的最新版本"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_config_sync"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="获取服务器配置"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_dedeem_consume"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="兑换码兑换"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
