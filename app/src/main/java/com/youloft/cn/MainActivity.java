@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.umeng.commonsdk.UMConfigure;
 import com.umeng.commonsdk.utils.UMUtils;
 import com.youloft.api.ApiManager;
 import com.youloft.api.webview.WebViewUtil;
@@ -37,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
 
         //第三方统计初始化
         StatisticsManager.initStatistics(this, "", "8684e4c844fde3c4f7db6ca3242807c4", UMUtils.getChannelByXML(this));
-
 
 
         findViewById(R.id.tv_show_byte_dance_banner).setOnClickListener(new View.OnClickListener() {
