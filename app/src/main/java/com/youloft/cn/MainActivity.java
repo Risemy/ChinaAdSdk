@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //国内接口初始化统计
-        ApiManager.init(this, "9011e420-50fd-4b62-96b4-6dcaa26514ea", "6ef864206a884e81819985c78767edad", "https://testchinaapi.youloft.com");
+        ApiManager.init(this, "90127a47-660a-4dbc-9373-1eff836045eb", "a8dbf6d12f2b4a6f8db422553ba8c087", "https://testchinaapi.youloft.com");
 
         //广告SDK初始化
         AdManager.initAdSdk(this,
@@ -204,7 +204,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.tv_user_order).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ApiManager.userOrder("900a0733-2e50-4479-99b9-df331e4fbab8");
+                ApiManager.userOrder("83b29e89-8b9f-4ab9-84d3-ab99010469eb");
             }
         });
 
